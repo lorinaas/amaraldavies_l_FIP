@@ -1,0 +1,560 @@
+/* ---Basic CSS Reset--- */
+
+body {
+   margin: 0;
+   padding: 0;
+   color: #545454;
+   font-family: 'Laila', sans-serif;
+   font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, p {
+   margin: 0;
+   padding: 0;
+}
+
+/* 
+    CSS Guide 
+
+    1. General Styles
+    2. Grid
+    3. Header
+    4. Main Hero Image
+    5. Products
+    6. New
+    7. Contact Form
+    8. Footer
+ */
+
+/* 1. ---General Styles--- */
+
+.hidden {
+   display: none;
+}
+
+.container {
+   width: 428px;
+   margin: 0 auto;
+   background-color: #fff;
+}
+
+p {
+   font-family: 'Laila', sans-serif;
+   font-weight: 300;
+}
+
+.button {
+   font-size: 9px;
+   color: white;
+   background-color: #E7C27D;
+   padding-left: 5px;
+   margin-top: 20px;
+   width: 62.5px;
+   height: 32.5px;
+   border-color: #E7C27D;
+   margin-left: 5px;
+   margin-bottom: 30px;
+
+}
+
+a {
+   text-decoration: none;
+   color: #9369A9;
+   cursor: pointer;
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+.section-title h3 {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+   font-size: 18pt;
+   color: #9369A9;
+   font-family: 'Playfair Display', serif;
+   
+}
+
+.section-title h3::before {
+   content: url(../img/sparkles-mob.svg);
+}
+
+.section-title h3::after {
+   content: url(../img/sparkles-mob.svg);
+}
+
+/* ---Grid --- */
+
+.grid {
+   display:grid;
+   grid-template-columns: repeat(4, 95px);
+   grid-column-gap: 16px;
+}
+
+/* ---3. Header--- */
+
+#main-header {
+   top: 0px;
+   margin: 0;
+   height: 95px;
+   grid-column: 1/4;
+   position: sticky;
+   background-color: white;
+}
+
+#menu-nav {
+   margin-left: 50px;
+   margin-top: 35px;
+}
+
+.fas {
+   color:#dbb27b;
+}
+
+.fas:hover {
+   cursor: pointer;
+}
+
+#logo {
+   width: 106.74px;
+   height: 69px;
+   grid-column: 2/2;
+}
+
+.nav-logo {
+   margin-top: 10px;
+   margin-left: 60px;
+}
+
+#nav-icons {
+   margin-top: 10px;
+   grid-column: 3/5;
+   margin-right: 40px;
+}
+
+#icons {
+   list-style-type: none;
+   display: flex;
+   justify-content: end;
+}
+
+#icons li {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+/* ---4. Hero Image Area--- */
+
+#main-hero-img {
+   grid-column: 1/5;
+   height: 428px;
+   background: url(../img/mobile-hero-image.jpg) no-repeat bottom;
+}
+
+
+.hero-img-h2 {
+   margin-top: 80px;
+   margin-left: 20px;
+   padding-top: 25px;
+   font-size: 22px;
+   font-family: 'Playfair Display', serif;
+   padding-left: 10px;
+}
+
+.hero-img-h2 span {
+   color: #9369A9;
+}
+
+.hero-img-p {
+   padding-top: 15px;
+   font-size: 14px;
+   
+}
+.hero-img-h2, .hero-image p {
+   color: #666666;
+   background-color: rgba(255, 255, 255, 0.6);
+   width: 383px;
+   height: 200px;
+}
+
+.button-hero {
+      font-size: 9px;
+      color: white;
+      background-color: #E7C27D;
+      padding-left: 5px;
+      width: 62.5px;
+      height: 32.5px;
+      border-color: #E7C27D;
+}
+
+/* ---Products--- */
+
+.products-img {
+   background-color: #EFF3F6;
+   width: 428px;
+
+}
+
+.products-img h4 {
+   color: #9369A9;
+   text-align: center;
+   font-size: 18px;
+   font-family: 'Playfair Display', serif;
+   padding-top: 5px;
+ 
+}
+
+.products-img h5 {
+   color: #3E3E3E;
+   text-align: center;
+   padding-top: 5px;
+   font-size: 19px;
+   font-family: 'Playfair Display', serif;
+
+}
+
+#products p {
+   text-align: center;
+   padding-top: 8px;
+   font-size: 12pt;
+   line-height: 22px;
+   height: 40px;
+
+}
+
+/* ---NEW--- */
+
+.new-pictures-style {
+   padding-top: 45px;
+}
+
+#new-info {
+   grid-column: 1/5;
+   background-color: #EFF3F6;
+   height: 550px;
+
+}
+.new-info-title  {
+   font-size: 18px;
+   font-family: 'Playfair Display', serif;
+   padding-bottom: 10px;
+   padding-top: 30px;
+   padding-left: 30px;
+}
+
+.new-info-title span {
+   color: #B89DC7;
+}
+
+.info-text {
+   font-size: 15px;
+   padding-left: 30px;
+   margin-right: 25px;
+}
+
+.info-text-two {
+   font-size: 15px;
+   padding-top: 25px;
+   padding-left: 30px;
+   margin-right: 25px;
+
+}
+
+#new-pictures {
+   grid-column: 1/-1;
+}
+
+.new-pictures-style {
+   margin-bottom: 20px;
+   padding-top: 20px;
+   margin-left: 35px;
+   align-items: center;
+
+}
+
+.button-new-mob {
+   margin-left: 30px;
+   font-size: 9px;
+   color: white;
+   background-color: #E7C27D;
+   width: 62.5px;
+   height: 32.5px;
+   border-color: #E7C27D;
+   margin-top: 30px;
+
+}
+
+/* 7. Contact Form */
+
+
+#contact form {
+   grid-column: 1/-1;
+}
+
+.contact-form-info-left {
+   grid-column: 1/-1;
+   padding-top: 50px;
+
+}
+
+.contact-form-info-left h2 {
+   font-family: 'Playfair Display', serif;
+   padding-bottom: 15px;
+
+}
+
+.contact-form-info-left h2 span {
+   color: #9369A9;
+}
+
+.contact-form-info-left p {
+   font-size: 12pt;
+}
+
+.contact-info-two {
+   padding-top: 13px;
+}
+
+.contact-info-three {
+   padding-top: 50px;
+}
+
+
+#contact-form-fields-right {
+   grid-column: 1/-1;
+   margin-top: 25px;
+   margin-bottom: 60px;
+}
+
+.contact-form-fields-style {
+   display: flex;
+   flex-direction: column;
+   background-color: #EFF3F6;
+   height: 330px;
+   padding-top: 20px;
+   padding-left: 45px;
+
+}
+
+input, textarea {
+   width: 300px;
+   height: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border: 1px solid #A7A7A7;
+   background-color: white;
+   margin-bottom: 15px;
+   font: inherit;
+   padding-left: 10px;
+}
+
+input::placeholder{
+   color: lightgray;
+ }
+
+textarea::placeholder{
+   color: lightgray;
+ }
+
+
+.contact-form-fields-style textarea {
+   height: 90px;
+   width: 300px;
+}
+
+.form-button {
+   font-size: 12px;
+   color: white;
+   background-color: #E7C27D;
+   padding-left: 5px;
+   padding-bottom: 20px;
+   width: 70px;
+   height: 30px;
+   padding-top: 5px;
+   border-color: #E7C27D;
+   border-radius: 10px;  
+}
+
+/* 8. ---Footer--- */
+
+#footer {
+   grid-column: 1/5;
+   background-color: #B89DC7;
+   padding-top: 15px;
+}
+
+#footer h2 {
+   margin-left: 20px;
+   color: white;
+   font-size: 12px;
+   font-family: 'Playfair Display', serif;
+}
+
+#footer h3 {
+   margin-left: 20px;
+   margin-top: 10px;
+   color: white;
+   font-size: 9px;
+   padding-bottom: 5px;
+}
+
+#footer-logo-nav {
+   grid-column: 2/3;
+   margin-left: 50px;
+}
+
+.footer-logo {
+   width: 88px;
+   height: 57px;
+}
+
+#footer-sign-up {
+   grid-column: 1/3;
+   font-size: 5px;
+}
+
+.sign-up-button {
+   grid-column: 3/4;
+   margin-top: 32px;
+   margin-left: 65px;
+}
+
+.sign-up-button button {
+   font-size: 8px;
+   color: white;
+   background-color: #E7C27D;
+   padding-left: 5px;
+   width: 45px;
+   height: 25px;
+   border-color: #E7C27D;
+   border-radius: 10px;  
+}
+
+#footer-nav-social {
+   grid-column: 1/3;
+   margin: 0px;
+}
+
+#footer-nav-social ul {
+   list-style-type: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   padding-top: 5px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+}
+
+.footer-icons ul li a {
+   padding-right: 10px;
+  
+}
+
+.footer-sign-box {
+   margin-left: 20px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.footer-sign-box input {
+   width: 250px;
+   height: 5px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+input, textarea {
+   border: 1px solid #A7A7A7;
+   background-color: white;
+   font: inherit;
+   font-size: 8pt;
+   padding-left: 10px;
+}
+
+input::placeholder{
+   color: lightgray;
+ }
+
+textarea::placeholder{
+   color: lightgray;
+ }
+
+/* ---Gallery/Products Specific Styles--- */
+
+#main-hero-img-gallery {
+   grid-column: 1/-1;
+   height: 458px;
+   background: url(../img/products-hero.jpg) no-repeat bottom;
+}
+
+#main-hero-img-gallery h2 {
+   grid-column: 1/8;
+   margin-top: 100px;
+
+}
+
+#products-gallery {
+   grid-column: 1/-1;
+}
+
+.products-img-gallery {
+   margin-bottom: 50px;
+}
+
+.product-name-gallery {
+   font-size: 22px;
+   color: #9369A9;
+   font-family: 'Playfair Display', serif;
+   padding-bottom: 5px;
+   padding-top: 10px;
+}
+
+.gallery-product-info {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.product-price-gallery {
+   margin-top: 9px;
+   font-size: 15pt;
+   padding-right: 70px;
+   font-family: 'Playfair Display', serif;
+}
+
+.product-subtitle {
+   margin-bottom: 0;
+   margin-top: 0;
+   font-size: 13pt;
+   color: #B89DC7;
+   padding-top: 10px;
+
+}
+
+.product-info {
+   font-size: 12pt;
+   padding-top: 15px;
+}
+
+.add-button {
+   text-align: center;
+   padding-top: 25px;
+}
+
+.add-button button {
+   font-size: 13px;
+   color: white;
+   background-color: #E7C27D;
+   width: 100px;
+   height: 45px;
+   border-color: #E7C27D;;
+   border-radius: 15px;  
+   font-size: 15px;
+}
+
+#footer {
+   margin-top: 30px;
+}
