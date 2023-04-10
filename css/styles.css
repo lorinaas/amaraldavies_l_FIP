@@ -1,0 +1,590 @@
+/* ---Basic CSS Reset--- */
+
+body {
+   margin: 0;
+   padding: 0;
+   color: #545454;
+   font-family: 'Laila', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+   margin: 0;
+   padding: 0;
+}
+
+
+a {
+   text-decoration: none;
+   color: #9369A9;
+   cursor: pointer;
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+/* 
+    CSS Guide 
+
+    1. General Styles
+    2. Grid
+    3. Header
+    4. Main Hero Image
+    5. Products
+    6. New
+    7. Contact Form
+    8. Footer
+ */
+
+/* 1. ---General Styles--- */
+
+.hidden {
+   display: none;
+}
+
+.container {
+   width: 1920px;
+   margin: 0 auto;
+   background-color: #fff;
+}
+
+p {
+   font-family: 'Laila', sans-serif;
+   font-weight: 300;
+}
+
+.section-title h3 {
+   margin-top: 60px;
+   margin-bottom: 60px;
+   text-align: center;
+   font-size: 28pt;
+   color: #9369A9;
+   font-family: 'Playfair Display', serif;
+   
+}
+
+.section-title h3::before {
+   content: url(../img/sparkles.svg);
+   padding-right: 5px;
+}
+
+.section-title h3::after {
+   content: url(../img/sparkle-right.svg);
+   padding-left: 5px;
+}
+
+.fas {
+   color: #E7C27D;
+}
+
+.fas:hover {
+   cursor: pointer;
+}
+
+/* 2. ---Grid--- */
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(12, 122px);
+   grid-column-gap: 16px;
+   grid-row-gap: 10px;
+   padding-left: 140px;
+   padding-right: 140px;
+
+}
+
+/* 3. ---Header--- */
+
+#main-header {
+   background-color: #fff;
+   top: 0px;
+   text-align: center;
+}
+
+
+#nav-logo {
+   grid-column: 4/10;
+}
+
+.logo {
+   width: 231px;
+   height: 149.32px;
+   margin: 0 auto;
+   padding-bottom: 10px;
+   padding-top: 30px;
+   padding-bottom: 20px;
+   text-align: center;
+
+}
+
+#main-nav {
+   grid-column: 3/11;
+   margin: 0px;
+   padding-bottom: 25px;
+}
+
+#main-nav ul {
+   padding: 0;
+
+}
+
+#main-nav ul li {
+   display: inline;
+}
+
+#main-nav ul li a {
+   color:#666666;
+   padding-left: 34px;
+   padding-right: 34px;
+   font-size: 16pt;
+   font-family: 'Abril Fatface', cursive;
+}
+
+#main-nav ul li a:hover {
+   color: #9369A9;
+   cursor: pointer;
+}
+
+#main-nav ul li a.active {
+   color: #9369A9;
+}
+
+#nav-icons {
+   grid-column: 11/-1;
+}
+
+#icons {
+   list-style-type: none;
+   display: flex;
+   justify-content: end;
+}
+
+#icons li {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+
+/* 4. ---Main Hero--- */
+
+#main-hero {
+   grid-column: 1/-1;
+   height: 750px;
+   background: url(../img/hero-image.jpg) no-repeat bottom;
+}
+
+#main-hero h2 {
+   grid-column: 1/7;
+   align-self: center;
+}
+
+.hero-img-h2 {
+   font-size: 30px;
+   font-family: 'Playfair Display', serif;
+}
+
+.hero-img-h2 span {
+   color: #9369A9;
+}
+.hero-img-h2 p {
+   padding-top: 10px;
+   font-size: 15pt;
+}
+
+.hero-img-h2, .hero-image p {
+   color: #666666;
+   background-color: rgba(255, 255, 255, 0.6);
+   margin-bottom: 169px;
+   padding-top: 52px;
+   padding-bottom: 50px;
+   padding-left: 40px;
+   padding-right: 50px;
+
+}
+
+.button {
+   font-size: 16px;
+   color: white;
+   background-color: #E7C27D;
+   padding-left: 5px;
+   margin-top: 30px;
+   padding-bottom: 35px;
+   width: 125px;
+   height: 45px;
+   padding-top: 20px;
+   border-color: #E7C27D;
+
+}
+
+/* 5. ---Products Section--- */
+
+#products {
+   grid-column: 12/-1;
+   grid-column-gap: 85px;
+}
+
+.products-img {
+   grid-column: span 2;
+   background-color: #EFF3F6;
+   width: 397px;
+
+}
+
+.products-img h4 {
+   color: #9369A9;
+   text-align: center;
+   font-size: 21px;
+   font-family: 'Playfair Display', serif;
+   padding-top: 10px;
+}
+
+.products-img h5 {
+   color: #3E3E3E;
+   text-align: center;
+   padding-top: 10px;
+   font-size: 20px;
+   padding-bottom: 5px;
+   font-family: 'Playfair Display', serif;
+}
+
+#products p {
+   background-color: #EFF3F6;
+   height: 80px;
+   padding-left: 15px;
+   width: 377px;
+   padding-top: 8px;
+   font-size: 13pt;
+   line-height: 22px;
+}
+
+/* 6. ---New Section--- */
+
+#new {
+   grid-column: 1/-1;
+   background-color: #EFF3F6;
+   height: 750px;
+   padding-top: 40px;
+}
+
+#new-info {
+   grid-column: 1/8;
+
+}
+.new-info-title  {
+   font-size: 28px;
+   font-family: 'Playfair Display', serif;
+   padding-bottom: 20px;
+}
+
+.new-info-title span {
+   color: #B89DC7;
+}
+
+.info-text {
+   font-size: 18px;
+}
+
+.info-text-two {
+   font-size: 18px;
+   padding-top: 50px;
+}
+
+#new-pictures {
+   grid-column: 9/-1;
+}
+
+.new-pictures-style {
+   align-items: center;
+   display: inline-flex;
+   grid-column-gap: 23px;
+   padding-bottom: 25px;
+}
+
+.button-shop {
+   text-decoration: none;
+}
+
+/* 7. ---Contact Form--- */
+
+#contact form {
+   grid-column: 1/-1;
+}
+
+.contact-form-info-left {
+   grid-column: 1/6;
+   padding-top: 70px;
+
+}
+
+.contact-form-info-left h2 {
+   font-family: 'Playfair Display', serif;
+   padding-bottom: 15px;
+
+}
+
+.contact-form-info-left h2 span {
+   color: #9369A9;
+}
+
+.contact-form-info-left p {
+   font-size: 13pt;
+}
+
+.contact-info-two {
+   padding-top: 10px;
+}
+
+.contact-info-three {
+   padding-top: 50px;
+}
+
+
+#contact-form-fields-right {
+   grid-column: 9/-1;
+   margin-top: 80px;
+   margin-bottom: 150px;
+}
+
+.contact-form-fields-style {
+   display: flex;
+   flex-direction: column;
+   background-color: #EFF3F6;
+   width: 500px;
+   height: 455px;
+   padding-left: 60px;
+   padding-top: 40px;
+
+}
+
+input, textarea {
+   width: 400px;
+   height: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border: 1px solid #A7A7A7;
+   background-color: white;
+   margin-bottom: 15px;
+   font: inherit;
+   padding-left: 10px;
+}
+
+input::placeholder{
+   color: lightgray;
+ }
+
+textarea::placeholder{
+   color: lightgray;
+ }
+
+
+.contact-form-fields-style textarea {
+   height: 150px;
+   width: 400px;
+}
+
+
+.form-button {
+   font-size: 15px;
+   color: white;
+   background-color: #E7C27D;
+   padding-left: 5px;
+   margin-top: 10px;
+   padding-bottom: 30px;
+   width: 100px;
+   height: 30px;
+   padding-top: 10px;
+   border-color: #E7C27D;
+   border-radius: 10px;  
+}
+
+
+/* 8. ---Footer--- */
+
+#footer {
+   grid-column: 1/-1;
+   background-color: #B89DC7;
+   padding-top: 45px;
+}
+
+#footer h2 {
+   color: white;
+   font-size: 20px;
+   font-family: 'Playfair Display', serif;
+}
+
+#footer h3 {
+   color: white;
+   font-size: 15px;
+   padding-bottom: 10px;
+}
+
+/* 8. ---Footer Logo--- */
+
+#footer-logo-nav {
+   grid-column: 1/4;
+   margin-left: 50px;
+}
+
+.footer-logo {
+   width: 176.7px;
+   height: 114.22px;
+   padding-top: 5px;
+}
+
+/* 8. ---Sign Up--- */
+
+#footer {
+   grid-column: 1/12;
+}
+
+#footer-sign-up {
+   grid-column: 4/7;
+}
+
+.sign-up-button {
+   grid-column: 7/8;
+}
+
+
+.sign-up-button button {
+   margin-left: 5px;
+   margin-top: 37px;
+   padding-bottom: 3px;
+   font-size: 15px;
+   color: white;
+   background-color: #E7C27D;
+   padding-left: 5px;
+   width: 80px;
+   height: 40px;
+   border-color: #E7C27D;
+   border-radius: 10px;  
+}
+
+/* 8. ---Menu--- */
+
+#footer-menu {
+   grid-column: 9/10;
+}
+
+.footer-menu ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   padding-bottom: 30px;
+}
+
+.footer-menu ul li a {
+   color: #9369A9;
+   font-size: 12pt;
+   font-family: 'Abril Fatface', cursive;
+}
+
+.footer-menu ul li a:hover {
+   color: white;
+   cursor: pointer;
+   }
+
+/* 8. ---Connect with Us--- */
+
+#footer-nav-social {
+   grid-column: 11/-1;
+}
+
+#footer-nav-social ul {
+   list-style-type: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   padding-top: 10px;
+}
+
+.footer-icons ul li a {
+   padding-top: 15px;
+   padding-right: 25px;
+  
+}
+
+/* 8. ---Specific to Gallery/Products page--- */
+
+#main-hero-img-gallery {
+   height: 582px;
+   background: url(../img/products-hero.jpg) no-repeat bottom;
+}
+
+#main-hero-img-gallery h2 {
+   grid-column: 1/8;
+   margin-top: 100px;
+
+}
+
+#products-gallery {
+   grid-column: 1/-1;
+   margin-bottom: 150px;
+   
+}
+
+.products-img-gallery {
+   grid-column: span 4;
+   margin-bottom: 150px;
+}
+
+.product-name-gallery {
+   font-size: 22px;
+   color: #9369A9;
+   font-family: 'Playfair Display', serif;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   padding-left: 20px;
+}
+
+.gallery-product-info {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.product-price-gallery {
+   margin-top: 9px;
+   font-size: 15pt;
+   padding-right: 70px;
+   font-family: 'Playfair Display', serif;
+}
+
+.product-subtitle {
+   padding-left: 20px;
+   margin-bottom: 0;
+   margin-top: 0;
+   font-size: 13pt;
+   color: #B89DC7;
+   padding-top: 10px;
+
+}
+
+.product-info {
+   font-size: 13pt;
+   padding-left: 20px;
+   padding-top: 10px;
+   line-height: 24px;
+}
+
+.add-button {
+   text-align: center;
+   padding-top: 25px;
+}
+
+.add-button button {
+   font-size: 13px;
+   color: white;
+   background-color: #E7C27D;
+   width: 100px;
+   height: 45px;
+   border-color: #E7C27D;;
+   border-radius: 15px;  
+   font-size: 15px;
+}
